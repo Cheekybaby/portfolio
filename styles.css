@@ -1,0 +1,136 @@
+:root {
+    --color-red1: #B11313;
+    --color-red2: #DF1F2D;
+    --color-blue1: #2B3784;
+    --color-blue2: #447BBE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+        180deg,
+        var(--color-blue1),
+        var(--color-blue2)
+    );
+}
+
+/* The nav bar */
+.navigation {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-blue1);
+    position: fixed;
+    top: -0.1rem;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    gap: 3rem;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    display: block;
+}
+
+.logo > img {
+    position: relative;
+    top: -1rem;
+    object-fit: cover;
+    height: 150%;
+    width: 150%;
+    border-radius: 50%;
+    -webkit-box-reflect: right;
+}
+
+.name {
+    margin: 0 0 0 6.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Brush Script MT, Brush Script Std, cursive, sans-serif;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 70%;
+    height: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-red2);
+}
+
+.links > a {
+    text-decoration: none;
+    margin: 5rem;
+    font-weight: bold;
+}
+
+.links > a:hover {
+    color: white;
+}
+
+/* Welcome section */
+#welcome-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80rem;
+    margin-top: 2rem;
+    color: var(--color-red1);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.about {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.pfp {
+    max-width: 50%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+/* Project Section */
